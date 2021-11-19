@@ -665,33 +665,19 @@ body {
 }
 .expert-container {
   padding-top: 100px;
+  padding-bottom: 250px;
   width: 1200px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   position: relative;
-  background-image: url('/assets/images/fifth-section.png');
+  background-image: url('/assets/images/expert.png');
+  background-size: 910px auto;
   background-repeat: no-repeat;
-  background-position: 0 58px ;
+  background-position: 150px 58px ;
 }
-.expert-container .left {
-  margin: 33px 67px 0 0;
-}
-.expert-container .left span {
-  font-size: 30px;
-  line-height: 28px;
-  letter-spacing: -1.2px;
-  text-align: center;
-  display: block;
-  color: #999;
-}
-.expert-container .left > div {
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: -0.8px;
-  margin-top: -11px;
-  text-align: center;
-  margin-bottom: 11px;
+.expert-container .right {
+  padding-left: 500px;
 }
 .expert-container .right .short-divider {
   background-color: #333;
@@ -717,20 +703,6 @@ body {
 .expert-container .right .body span {
   color: #7732FF;
   font-weight: 700;;
-}
-.expert-container .right .key-text {
-  margin-left: 97px;
-  display: flex;
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: -0.8px;
-  text-align: center;
-  color: #333;
-  font-weight: 700;
-  margin-bottom: 204px;
-}
-.expert-container .right .key-text > div:first-child {
-  margin-right: 115px;
 }
 
 .sixth-section {
@@ -1137,13 +1109,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 26px;
   letter-spacing: -0.8px;
   text-align: center;
   color: #333;
   padding-top: 17px;
-  padding-left: 5px;
   right: -100px;
   top: 60px;
 }
@@ -1260,6 +1231,7 @@ body {
   letter-spacing: -0.45px;
 }
 .bubble-text {
+  width: max-content;
   position: absolute;
   font-size: 20px;
   letter-spacing: -0.5px;
@@ -1986,10 +1958,6 @@ footer .escrow {
     background-position: 40px 140px;
     padding-bottom: 463px;
   }
-
-  .expert-container .left {
-    display: none !important;
-  }
   .expert-container .right {
     padding: 0 50px;
   }
@@ -2009,9 +1977,6 @@ footer .escrow {
     line-height: 18px;
     letter-spacing: -0.36px;
     margin-bottom: 21vw;
-  }
-  .expert-container .key-text {
-    display: none !important;
   }
   
   .sixth-section {
