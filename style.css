@@ -179,6 +179,9 @@ body {
   width: 100%;
   height: 100%;
 }
+.banner-section .banner {
+  cursor: pointer;
+}
 .banner-section img {
   object-fit: cover;
   width: 100%;
@@ -354,6 +357,7 @@ body {
   line-height: 32px;
   letter-spacing: -0.4px;
   border-radius: 25px;
+  text-align: center;
 }
 .answer-box .answer:not(:last-child) {
   margin-bottom: 12px;
@@ -1269,6 +1273,7 @@ body {
   border-radius: 24px;
   box-shadow: 3.9px 4.6px 16px rgba(78, 71, 92, 0.56);
   padding: 0 20px;
+  line-height: 48px;
 }
 
 .review1 img {
@@ -1668,11 +1673,15 @@ footer .escrow {
     width: 100%;
     height: 100%;
   }
+  .banner-section .banner {
+    width: auto;
+    margin: 0 4px;
+    height: 160px !important;
+  }
   .banner-section img {
     object-fit: cover;
-    width: auto;
-    height: 160px;
-    margin: 0 4px;
+    width: 100%;
+    height: 100%;
   }
   
   .second-section {
@@ -1779,9 +1788,6 @@ footer .escrow {
     line-height: 21px;
     letter-spacing: -0.17px;
     border-radius: 8px;
-    text-align: left;
-    justify-content: start;
-    padding-left: 26px;
     font-weight: 400;
   }
   .answer-box .answer:not(:last-child) {
@@ -1800,10 +1806,13 @@ footer .escrow {
   .fourth-body {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    max-width: 320px;
+    padding: 0 32px;
   }
   .fourth-body .reason {
     margin-bottom: 17px;
+    margin-right: 0 !important;
   }
   .reason .circle-image {
     width: 100px;
@@ -1822,12 +1831,6 @@ footer .escrow {
     font-size: 11px;
     line-height: 17px;
     letter-spacing: -0.36px;
-  }
-  .fourth-body .reason:nth-child(2n - 1) {
-    margin-right: 53px;
-  }
-  .fourth-body .reason:nth-child(2n) {
-    margin-right: 0;
   }
   .fourth-body .reason:nth-child(1) img {
     margin-left: 5px;
@@ -1979,26 +1982,13 @@ footer .escrow {
     align-items: flex-start;
     width: 100%;
     background-size: calc(100vw - 80px);
-    background-image: url('/assets/images/fifth-section-mobile.png');
+    background-image: url('/assets/images/expert-mobile.png');
     background-position: 40px 140px;
+    padding-bottom: 463px;
   }
+
   .expert-container .left {
-    margin: 0;
-    position: absolute;
-    bottom: 160px;
-    right: 75px;
-  }
-  .expert-container .left span {
-    font-size: 18px;
-    line-height: 17px;
-    letter-spacing: -0.51px;
-  }
-  .expert-container .left > div {
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: -0.34px;
-    margin-top: -9px;
-    margin-bottom: 4px;
+    display: none !important;
   }
   .expert-container .right {
     padding: 0 50px;
@@ -2018,17 +2008,10 @@ footer .escrow {
     font-size: 13px;
     line-height: 18px;
     letter-spacing: -0.36px;
-    margin-bottom: 81px;
+    margin-bottom: 21vw;
   }
-  .expert-container .right .key-text {
-    margin-left: 59px;
-    font-size: 13px;
-    line-height: 17px;
-    letter-spacing: -0.36px;
-    margin-bottom: 348px;
-  }
-  .expert-container .right .key-text > div:first-child {
-    margin-right: 80px;
+  .expert-container .key-text {
+    display: none !important;
   }
   
   .sixth-section {
@@ -2278,7 +2261,7 @@ footer .escrow {
   .bubble {
     width: 93px;
     height: 93px;
-    background-image: url('/assets/icons/bubble-mobile.svg');
+    background-image: url('/assets/images/bubble-mobile.png');
     background-size: contain;
     font-size: 11px;
     line-height: 15px;
@@ -2373,6 +2356,7 @@ footer .escrow {
     font-size: 13px;
     letter-spacing: -0.24px;
     height: 27px;
+    line-height: 27px;
     border-radius: 14px;
     box-shadow: 1.664px 1.96267px 6.82667px rgba(78, 71, 92, 0.56);
   }
@@ -2396,11 +2380,11 @@ footer .escrow {
     float: left;
   }
   .review2 .bubble-text1 {
-    bottom: 40px;
+    bottom: 50px;
     left: 17px;
   }
   .review2 .bubble-text2 {
-    bottom: 12px;
+    bottom: 15px;
     left: unset;
     right: 12px;
   }
@@ -2412,11 +2396,11 @@ footer .escrow {
     float: left;
   }
   .review3 .bubble-text1 {
-    bottom: 49px;
+    bottom: 55px;
     left: 20px;
   }
   .review3 .bubble-text2 {
-    bottom: 157px;
+    bottom: 147px;
     right: 18px;
   }
   .review3 .bubble-text3 {
