@@ -1231,6 +1231,7 @@ body {
   letter-spacing: -0.45px;
 }
 .bubble-text {
+  width: -webkit-max-content;
   width: max-content;
   position: absolute;
   font-size: 20px;
